@@ -1,0 +1,197 @@
+- name: Home
+  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+  # hide-desktop-navigation: true
+  columns:
+    - size: small
+      widgets:
+        - type: calendar
+          first-day-of-week: monday
+
+        - type: bookmarks
+          groups:
+            - links:
+                - title: GitHub Stars
+                  url: https://github.com/bmz1?tab=stars
+
+        - type: rss
+          limit: 10
+          collapse-after: 6
+          cache: 12h
+          feeds:
+            # Original feeds
+            - url: https://www.kitchensoap.com/feed/
+              title: Kitchen Soap
+            - url: https://selfh.st/rss/
+              title: selfh.st
+            - url: https://ciechanow.ski/atom.xml
+            - url: https://www.joshwcomeau.com/rss.xml
+              title: Josh Comeau
+            - url: https://samwho.dev/rss.xml
+            - url: https://ishadeed.com/feed.xml
+              title: Ahmad Shadeed
+            - url: https://cprss.s3.amazonaws.com/javascriptweekly.com.xml
+              title: JavaScript Weekly
+            - url: https://cprss.s3.amazonaws.com/nodeweekly.com.xml
+              title: Node Weekly
+            - url: https://cprss.s3.amazonaws.com/reactjsweekly.com.xml
+              title: React Status
+            - url: https://cprss.s3.amazonaws.com/webdevweekly.com.xml
+              title: Web Dev Weekly
+            - url: https://cprss.s3.amazonaws.com/frontendfoc.us.xml
+
+            # AI news sources
+            - url: https://www.deeplearningweekly.com/feed
+              title: Deep Learning Weekly
+            - url: https://feeds.feedburner.com/blogspot/gJZg
+              title: Google AI Blog
+            - url: https://openai.com/blog/rss/
+              title: OpenAI Blog
+            - url: https://blog.research.google/feeds/posts/default
+              title: Google Research Blog
+            - url: https://arxiv.org/rss/cs.AI
+              title: ArXiv AI Papers
+
+    - size: full
+      widgets:
+        - type: group
+          widgets:
+            - type: hacker-news
+            - type: lobsters
+
+        - type: videos
+          channels:
+            - UCXuqSBlHAE6Xw-yeJA0Tunw # Linus Tech Tips
+            - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
+            - UCsBjURrPoezykLs9EqgamOA # Fireship
+            - UCBJycsmduvYEL83R_U4JriQ # Marques Brownlee
+            - UCHnyfMqiRRG1u-2MsSQLbXA # Veritasium
+            # Added AI & tech channels
+            - UC0rqucBdTuFTjJiefW5t-IQ # Lex Fridman
+            - UCbY9sKALJWKDKay0jkrpSFQ # Two Minute Papers
+            - UC0QciQOZKVQ2fBDsOJNteAA # NVIDIA AI
+            - UC7_gcs09iThXybpVgjHZ_7g # TensorFlow
+            - UCNJ1Ymd5yFuUPtn21xtRbbw # Stanford AI Courses
+
+        - type: group
+          widgets:
+            # Original subreddits
+            - type: reddit
+              subreddit: technology
+              show-thumbnails: true
+            - type: reddit
+              subreddit: selfhosted
+              show-thumbnails: true
+            - type: reddit
+              subreddit: webdev
+              show-thumbnails: true
+            - type: reddit
+              subreddit: Frontend
+              show-thumbnails: true
+            - type: reddit
+              subreddit: FullStack
+              show-thumbnails: true
+            - type: reddit
+              subreddit: Reactjs
+              show-thumbnails: true
+            - type: reddit
+              subreddit: learnprogramming
+              show-thumbnails: true
+            - type: reddit
+              subreddit: node
+              show-thumbnails: true
+            - type: reddit
+              subreddit: javascript
+              show-thumbnails: true
+            - type: reddit
+              subreddit: npm
+              show-thumbnails: true
+            - type: reddit
+              subreddit: golang
+              show-thumbnails: true
+            - type: reddit
+              subreddit: learngo
+              show-thumbnails: true
+            - type: reddit
+              subreddit: aws
+              show-thumbnails: true
+            - type: reddit
+              subreddit: devops
+              show-thumbnails: true
+            - type: reddit
+              subreddit: kubernetes
+              show-thumbnails: true
+            - type: reddit
+              subreddit: docker
+              show-thumbnails: true
+            - type: reddit
+              subreddit: softwarearchitecture
+              show-thumbnails: true
+            - type: reddit
+              subreddit: coding
+              show-thumbnails: true
+            - type: reddit
+              subreddit: microservices
+              show-thumbnails: true
+            - type: reddit
+              subreddit: programming
+              show-thumbnails: true
+            - type: reddit
+              subreddit: ExperiencedDevs
+              show-thumbnails: true
+            - type: reddit
+              subreddit: ProgrammerHumor
+              show-thumbnails: true
+
+            # Added AI subreddits
+            - type: reddit
+              subreddit: MachineLearning
+              show-thumbnails: true
+            - type: reddit
+              subreddit: artificial
+              show-thumbnails: true
+            - type: reddit
+              subreddit: deeplearning
+              show-thumbnails: true
+            - type: reddit
+              subreddit: OpenAI
+              show-thumbnails: true
+            - type: reddit
+              subreddit: GPT3
+              show-thumbnails: true
+            - type: reddit
+              subreddit: LangChain
+              show-thumbnails: true
+            - type: reddit
+              subreddit: AIdev
+              show-thumbnails: true
+
+    - size: small
+      widgets:
+        - type: weather
+          location: Budapest, Hungary
+          units: metric # alternatively "imperial"
+          hour-format: 24h # alternatively "24h"
+          # Optionally hide the location from being displayed in the widget
+          # hide-location: true
+
+        - type: markets
+          markets:
+            - symbol: SPY
+              name: S&P 500
+            - symbol: BTC-USD
+              name: Bitcoin
+            - symbol: NVDA
+              name: NVIDIA
+            - symbol: AAPL
+              name: Apple
+            - symbol: MSFT
+              name: Microsoft
+            # Added AI-focused companies
+            - symbol: GOOG
+              name: Alphabet
+            - symbol: META
+              name: Meta
+            - symbol: AMD
+              name: AMD
+            - symbol: PLTR
+              name: Palantir
